@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boss Dice Challenge</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boss Dice Challenge</h1>
+        <div class="game">
+            <div class="dice-player">
+                <h2>Player 1</h2>
+                <div class="dice" id="dice-player1">🎲</div>
+                <button onclick="rollDice('player1')">Roll Dice</button>
+                <p>Score: <span id="score-player1">0</span></p>
+            </div>
+            <div class="dice-player">
+                <h2>Player 2</h2>
+                <div class="dice" id="dice-player2">🎲</div>
+                <button onclick="rollDice('player2')">Roll Dice</button>
+                <p>Score: <span id="score-player2">0</span></p>
+            </div>
+        </div>
+        <button onclick="startNewGame()">Start New Game</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+<footer>
+    <p>
+          &copy,All rights reserved to kolli sanyasirao,2024.
+        </p>
+    </footer>
+</html>
+
